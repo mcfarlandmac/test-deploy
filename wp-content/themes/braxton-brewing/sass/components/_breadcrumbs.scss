@@ -1,0 +1,29 @@
+#breadcrumbs {
+	font-size: 0.8em;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	
+	.breadcrumb_last {
+		color: $gold;
+	}
+	
+	.single-biography &, .page-template-page-featuredimage-php & {
+		position: absolute;
+		top: 590px;
+		width: 100%;
+		&>div {
+			@extend .container;
+		}
+	}
+	
+	a {
+		color: $white;
+		display: inline-block;
+		@include transition(all, 0.2s);
+		&:hover {
+			color: $gold;
+			text-decoration: none;
+		}
+	}
+}

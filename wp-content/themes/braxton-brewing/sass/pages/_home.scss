@@ -1,0 +1,256 @@
+.goldbox {
+  background: url(../images/gold-texture.jpg) top left repeat $gold;
+  padding: 2em 0;
+  @include box-shadow(0 0 20px black);
+  @include box-shadow(0 0 20px rgba(0,0,0,0.5));
+  z-index: 300;
+  position: relative;
+  @media (min-width: $screen-sm-min) {
+    padding: 3.125em 0;
+    p {
+      font-size: 1.5em;
+    }
+  }
+}
+
+.paperbox {
+  background: url(../images/paper.jpg) top left repeat $white;
+  padding: 2em 0;
+  @include box-shadow(0 0 20px black);
+  @include box-shadow(0 0 20px rgba(0,0,0,0.5));
+  z-index: 300;
+  position: relative;
+  color: $blue;
+  @include font-microbrew;
+  border-top: 3px solid $beige;
+  border-bottom: 3px solid $beige;
+  @media (min-width: $screen-sm-min) {
+    padding: 3.125em 0;
+    p {
+      font-size: 2.5em;
+      padding: 0.25em;
+      border-top: dashed 2px $blue;
+      border-bottom: dashed 2px $blue;
+      line-height: 1;
+    }
+  }
+  p {	  
+	  @media (max-width: $screen-xs-max) {
+	    font-size: 1.2em;
+	    text-align: center;
+	    br {
+		    display: none;
+	    }
+	  }
+  }
+}
+
+#home-features {
+  @include box-shadow(0 0 20px black);
+  @include box-shadow(0 0 20px rgba(0,0,0,0.25));
+  position: relative;
+  & > .row {
+    height: 300px;
+    &.double {
+      height: 600px;
+      & > div >.row {
+        height: 300px;
+      }
+    }
+    & > div {
+      height: 100%;
+      position: relative;
+    }
+  }
+  .ad {
+    overflow: hidden;
+    height: 100%;
+    margin-left: -15px;
+    margin-right: -15px;
+    @media (min-width: $screen-sm-min) {
+	    margin-left: 0;
+	    margin-right: 0;
+    }
+    & img {
+      display: block;
+      top: 0;
+      left: 0;
+      margin: 0 auto;
+      width: 100%;
+      height: auto;
+      @media (min-width: $screen-sm-min) {
+      	position: absolute; 
+	      width: auto;
+	      max-width: none;
+	      height: 100%;
+      }
+    }
+    & > a {
+      display: block;
+      top: 0;
+      left: 0;
+      text-align: center;
+      width: 100%;
+      height: auto;
+      @media (min-width: $screen-sm-min) {
+      	position: absolute; 
+	      width: 100%;
+	      height: 100%;
+      }
+      > img {
+        position: relative;
+      }
+    }
+  }
+  .twitter, .blog-post {
+    background: url(../images/twitter-back.jpg) center center no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    padding: 1.5em;
+    display: table;
+    & > div {
+      display: table-cell;
+      vertical-align: middle;
+      .post {
+        margin-top: 2.5em;
+        font-size: 1.125em;
+        @media (max-width: $screen-sm-max) {
+	        font-size: 0.9em;
+        }
+        .entry, .entry p {
+          color: $white !important;
+        }
+      }
+    }
+    .block-title {
+      font-weight: bold;
+      text-align: center;
+      font-size: 1.75em;
+      text-transform: uppercase;
+      position: absolute;
+      top: 20px;
+      left: 0;
+      width: 100%;
+      @include font-microbrew;
+    }
+  }
+  .blog-post {
+    background-image: url(../images/blogpost-back.jpg);
+    h4 {
+      margin-bottom: 0;
+    }
+  }
+
+}
+
+#home-features {
+  & > .row {
+  	height: auto;
+    @media (min-width: $screen-sm-min) {
+      height: 192px;
+    }
+    @media (min-width: $screen-md-min) {
+      height: 248px;
+    }
+    @media (min-width: $screen-lg-min) {
+      height: 300px;
+    }
+    &.double {
+	    height: auto;
+      @media (min-width: $screen-sm-min) {
+        height: 384px;
+      }
+      @media (min-width: $screen-md-min) {
+        height: 496px;
+      }
+      @media (min-width: $screen-lg-min) {
+        height: 600px;
+      }
+      & > div > .row {
+      	height: auto;
+        @media (min-width: $screen-sm-min) {
+          height: 192px;
+        }
+        @media (min-width: $screen-md-min) {
+          height: 248px;
+        }
+        @media (min-width: $screen-lg-min) {
+          height: 300px;
+        }
+      }
+    }
+  }
+}
+
+.map {
+  background: url(../images/map.jpg) no-repeat center center;
+  color: $blue;
+  text-align: center;
+  height: 100%;
+  & > .row {
+    height: 100%;
+  }
+  @media (max-width: $screen-xs-max) {
+	  padding: 30px 15px;
+    .xs-vert-half {
+      height: 50%;
+      display: table;
+      width: 100%;
+      &>div {
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+.overlay-link {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: $gold;
+  background: rgba($gold, 0.8);
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 10px;
+  color: $white;
+  &:hover {
+    color: white;
+  }
+}
+
+.home {
+  h1.entry-title {
+    display: none;
+  }
+}
+
+.subscribe-front {
+	background-image: url(../images/people-background.jpg);
+	@media (max-width: $screen-xs-max) {
+		padding: 30px 15px;
+	}
+	#subscribe-wrap {
+		display: table;
+		width: 100%;
+		height: 100%;
+		form {
+			display: table-cell;
+			vertical-align: middle;
+		}
+		.form-directions {
+			text-align: center;
+			label {
+				font-weight: 400;
+				font-size: 1.4em;
+				text-transform: uppercase;
+				@include font-microbrew;
+			}
+		}
+		.btn-default {
+			border: none;
+			height: 34px;
+		}
+	}
+}

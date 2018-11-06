@@ -1,0 +1,68 @@
+.beer.teaser {
+  background: url(../images/gold-texture.jpg) top left repeat $gold;
+  height: 340px;
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  text-align: center;
+
+  .entry-container {
+    height: 100%;
+    position: relative;
+
+    .teaser-image {
+      position: absolute;
+      top: 0;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 220px;
+      width: 100%;
+    }
+
+    .entry-info {
+      width: 100%;
+      padding: 20px;
+      position: absolute;
+      bottom: 0;
+      overflow: hidden;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 0.8em;
+
+      h3 {
+        text-transform: none;
+        font-size: 2.5em;
+        margin-bottom: 0;
+        a {
+          color: $white;
+          font-weight: 200;
+        }
+      }
+    }
+  }
+
+  footer {
+    background: $darkgold;
+    background: rgba($darkgold, 0.6);
+    @include transition(background, .25s);
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    margin-bottom: -2em;
+    text-align: center;
+    &:hover {
+      background: $blue;
+      background: rgba(darken($darkgold, 5), 0.6);
+    }
+    a {
+      color: $white;
+      text-transform: uppercase;
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 0.5em inherit;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

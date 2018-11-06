@@ -1,0 +1,163 @@
+#header-wrap {
+	position: fixed;
+	width: 100%;
+	z-index: 10000;
+}
+
+.gradient-header {
+	background: #063251;
+	background: -moz-linear-gradient(top,  #063251 0%, #021728 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#063251), color-stop(100%,#021728));
+	background: -webkit-linear-gradient(top,  #063251 0%,#021728 100%);
+	background: -o-linear-gradient(top,  #063251 0%,#021728 100%);
+	background: -ms-linear-gradient(top,  #063251 0%,#021728 100%);
+	background: linear-gradient(to bottom,  #063251 0%,#021728 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#063251', endColorstr='#021728',GradientType=0 );
+	border-bottom: solid 3px $brightblue;
+	height: 119px;
+	overflow: visible;
+	@include transition(all 0.5s);
+	
+	.nav-open & {
+    @include transform(translate3d(-300px, 0, 0));
+  }
+	
+	.site-title {
+		margin-top: 0;
+	}
+	
+	.brew-address {
+		display: table;
+		height: 119px;
+		.address {
+			display: table-cell;
+			vertical-align: middle;
+			@include font-serif;
+			color: $gold;
+			position: relative;
+			&:after {
+				content: "\A0\2014";
+			}
+			&:before {
+				content: "\2014\A0";
+			}
+		}
+	}
+	
+	#cov {
+		background: url(../images/cov.png) no-repeat transparent center center;
+    display: block;
+    height: 119px;
+    width: 50px;
+		@media only screen and (-webkit-min-device-pixel-ratio:2),only screen and (-moz-min-device-pixel-ratio:2),only screen and (-o-min-device-pixel-ratio:2),only screen and (min-device-pixel-ratio:2) {
+			background-image: url(../images/cov@2x.png);
+			background-size: 41px 60px;
+		}
+	}
+
+	.site-branding {
+	  margin-bottom: 0;
+	  .site-title-heading {
+	    padding: 0px;
+	    a {
+	      background: url(../images/header-logo.png) no-repeat transparent;
+	      width: 207px;
+	      height: 132px;
+	      display: block;
+				@media only screen and (-webkit-min-device-pixel-ratio:2),only screen and (-moz-min-device-pixel-ratio:2),only screen and (-o-min-device-pixel-ratio:2),only screen and (min-device-pixel-ratio:2) {
+					background-image: url(../images/header-logo@2x.png);
+					background-size: 207px 132px;
+				}
+	    }
+	  }
+	  .navbar-toggle {
+	    display: block;
+	    .icon-bar {
+	      background-color: $white;
+	    }
+	  }
+	}
+	
+	.page-header-top-right {
+		margin-top: 0px;
+	  ul {
+	    list-style: none;
+	    float: right;
+	    display: table;
+			margin: 0px;
+			height: 119px;
+	    li {
+	      display: table-cell;
+	      vertical-align: middle;
+	      font-size: 0.9em;
+	      @include font-serif;
+	      &.spacer:after {
+	        content: "|";
+	        margin-left: 5px;
+	        padding-right: 5px;
+	      }
+	      &:last-child {
+	        margin-left: 2em;
+	      }
+	      a {
+	        color: $white;
+	        font-family: $sans-serif;
+		      text-transform: uppercase;
+		      font-weight: 200;
+	        &:hover {
+	          text-decoration: none;
+	        }
+	      }
+	    }
+	  }
+	  .toggle-menu {
+	    margin-left: 30px;
+	    cursor: pointer;
+	    font-size: 1.3em;
+	    display: block;
+	    color: $white;
+	    font-weight: 200;
+	    vertical-align: middle;
+	    text-transform: uppercase;
+	
+	    &:hover {
+	      text-decoration: none;
+	    }
+	    span {
+	      padding-left: 5px;
+	    }
+	  }
+	}
+}
+
+@media (max-width: $screen-xs-max) {
+	.page-container {
+		padding-top: 58px;
+	}
+	.gradient-header {
+		height: 58px;
+		.page-header-top-right ul {
+			height: 58px;
+		}
+		.site-branding {
+		  .site-title-heading {
+		    a {
+		      background: url(../images/header-logo.png) no-repeat transparent;
+		      width: 102px;
+		      height: 65px;
+		      background-size: 102px 65px;
+					@media only screen and (-webkit-min-device-pixel-ratio:2),only screen and (-moz-min-device-pixel-ratio:2),only screen and (-o-min-device-pixel-ratio:2),only screen and (min-device-pixel-ratio:2) {
+						background-image: url(../images/header-logo@2x.png);
+						background-size: 102px 65px;
+					}
+		    }
+		  }
+		  .navbar-toggle {
+		    display: block;
+		    .icon-bar {
+		      background-color: $white;
+		    }
+		  }
+		}
+	}
+}

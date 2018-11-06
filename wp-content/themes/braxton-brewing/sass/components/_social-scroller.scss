@@ -1,0 +1,49 @@
+#social-scroller-container {
+  .social-item {
+    height: 270px;
+    display: inline-block;
+    @media (max-width: $screen-xs-max) {
+/* 	    display: block; */
+    }
+    vertical-align: top;
+    img {
+      vertical-align: top;
+    }
+    &:nth-child(odd) {
+      background-image: url(../images/community-twitter-background-blue@2x.png);
+      a {
+        color: $darkgold;
+      }
+    }
+
+    &:nth-child(even) {
+      background-image: url(../images/community-twitter-background-gold@2x.png);
+      a {
+        color: $blue;
+      }
+    }
+  }
+  .instagram {
+    width: 270px;
+    img {
+      width: 270px;
+      height: auto;
+    }
+  }
+  .tweet {
+    width: 540px;
+    margin: 0;
+    background-size: 540px 270px;
+    position: relative;
+
+    .tweet-text {
+      font-size: 20px;
+      padding: 1.5em;
+    }
+    .tweet-braxton {
+      position: absolute;
+      right: 78px;
+      bottom: 28px;
+    }
+  }
+}

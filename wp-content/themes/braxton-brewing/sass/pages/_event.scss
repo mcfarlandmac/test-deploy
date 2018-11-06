@@ -1,0 +1,43 @@
+.event {
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0.2em auto 1em;
+  }
+  .entry-content {
+    background: $white;
+    color: $blue;
+    padding: 3em inherit;
+  }
+  .full-image {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .featured-image {
+    background-position: center center;
+    background-size: cover;
+    height: 350px;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .event-meta {
+    background: url(../images/gold-texture.jpg) top left repeat $gold;
+
+    span {
+      font-size: 1.8em;
+      font-weight: 200;
+    }
+    .event-location {
+      background: rgba(darken($darkgold, 5), 0.4);
+    }
+    & > div > div {
+      display: inline;
+      height: 80px;
+      line-height: 80px;
+      span {
+        vertical-align: middle;
+        display: inline;
+      }
+    }
+  }
+}

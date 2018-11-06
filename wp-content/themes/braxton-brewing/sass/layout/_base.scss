@@ -1,0 +1,89 @@
+body {
+  background-color: $blue;
+  color: $white;
+  @media (min-width: $screen-sm-min) {
+	  background: url(../images/background-video-still.jpg) center center no-repeat fixed;
+	  @include background-size(cover);
+	  background-position: fixed;
+  }
+}
+
+#bg {
+	background: url(../images/background-video-still.jpg);
+	@include background-size(cover);
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	background-position: center center;
+	background-repeat: no-repeat;
+	@media (min-width: $screen-sm-min) {
+		display: none;
+	}
+}
+
+.page-title {
+  text-transform: uppercase;
+}
+
+#main-column {
+  .page {
+    border: none;
+  }
+  .page, .post {
+    padding: 0px;
+  }
+}
+
+.page-container {
+	padding-top: 119px;
+  @include transition(all 0.5s);
+  .nav-open & {
+    @include transform(translate3d(-300px, 0, 0));
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  .row.vert-center {
+    display: table;
+    &>div {
+      display: table-cell;
+      vertical-align: middle;
+      float: none;
+    }
+  }
+}
+
+.floral-border {
+  margin: 2em auto;
+  position: relative;
+  &:before {
+    content: "";
+    border-top: dotted 2px $gray;
+    width: 43%;
+    height: 1px;
+    left: 5%;
+    top: 50%;
+    position: absolute;
+    @media (max-width: $screen-xs-max) {
+      width: 40%;
+    }
+  }
+  &:after {
+    content: "";
+    border-top: dotted 2px $gray;
+    width: 43%;
+    height: 1px;
+    right: 5%;
+    top: 50%;
+    position: absolute;
+    @media (max-width: $screen-xs-max) {
+      width: 40%;
+    }
+  }
+  .icon:after {
+    color: $gray;
+  }
+}

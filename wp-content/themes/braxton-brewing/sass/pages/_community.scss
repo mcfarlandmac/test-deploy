@@ -1,0 +1,31 @@
+#social-scroller-container {
+  margin: 2em 0 5em 0;
+}
+
+#signup-form-container {
+  margin: 4em 0;
+  label {
+    text-transform: uppercase;
+    padding: 0.7em 0;
+    @include font-microbrew;
+    font-size: 1.5em;
+  }
+  input[type=email] {
+    height: 50px;
+    @include border-radius(0);
+    border-color: #FFF;
+  }
+  input[type=submit] {
+    @include border-radius(0);
+    border: 0;
+    color: #FFF;
+    background-color: $gold;
+    text-shadow: none;
+    line-height: 2.75;
+    padding: 6px 18px;
+
+    &:hover {
+      z-index: 0;
+    }
+  }
+}

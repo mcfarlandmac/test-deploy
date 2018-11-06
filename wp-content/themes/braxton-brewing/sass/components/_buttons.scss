@@ -1,0 +1,26 @@
+.btn {
+	@include transition(all 0.1s);
+	border: none;
+	text-shadow: none !important;
+	@include border-radius(4px);
+	padding: 5px 20px;
+}
+
+.btn-gold {
+	@include font-bold;
+	background: $gold;
+	text-transform: uppercase;
+}
+
+.btn-default {
+	background: $gold;
+	color: $white;
+	text-transform: uppercase;
+/* 	margin: 10px; */
+	border: 2px solid $white;
+	&:hover {
+		background-color: $white;
+		color: $gold;
+		border: 2px solid $gold;
+	}
+}

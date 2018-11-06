@@ -1,0 +1,126 @@
+.post.teaser {
+  .teaser-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center center;
+  }
+  .entry-container {
+    background: url(../images/gold-texture.jpg) top left repeat $gold;
+    &.row {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    &> div {
+      height: 150px;
+      position: relative;
+      &.teaser-image-col {
+        padding: 0;
+        @media (max-width: $screen-xs-max) {
+          height: 200px;
+        }
+      }
+    }
+  }
+  .entry-info {
+    padding: 15px;
+  }
+  .entry-title {
+    font-weight: 200;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 0;
+    @media (max-width: $screen-xs-max) {
+      font-size: 2em;
+    }
+    a {
+      color: $white;
+      font-weight: 200;
+      @include transition(color, 0.2s);
+      &:hover {
+        color: $blue;
+        text-decoration: none;
+      }
+    }
+  }
+  .entry-meta {
+    text-align: center;
+  }
+  footer {
+    background: $darkgold;
+    background: rgba($darkgold, 0.6);
+    @include transition(background, .25s);
+    bottom: 0;
+    text-align: center;
+    @media (max-width: $screen-xs-max) {
+      height: 40px;
+    }
+    &:hover {
+      background: $blue;
+      background: rgba(darken($darkgold, 5), 0.6);
+    }
+    a {
+      color: $white;
+      text-transform: uppercase;
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 0.5em inherit;
+      text-align: center;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  &.teaser-wide {
+    .entry-title {
+/*       font-size: 120px; */
+      @media (min-width: $screen-sm-min) {
+        font-size: 2.3em;
+      }
+    }
+    .entry-container > div {
+      @media (min-width: $screen-sm-min) {
+        height: 320px;
+      }
+      @media (max-width: $screen-xs-max) {
+        height: 195px;
+      }
+    }
+    .teaser-image {
+      height: 100%;
+    }
+    @media (min-width: $screen-sm-min) {
+      .entry-title, .entry-meta {
+        text-align: left;
+      }
+    }
+    .entry-info {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    footer {
+      @extend .row;
+      position: absolute;
+      width: 100%;
+    }
+    @media (max-width: $screen-xs-max) {
+      .entry {
+        display: none;
+      }
+      .entry-container {
+        height: 390px;
+      }
+      footer {
+        position: absolute;
+        width: 100%;
+        height: 40px;
+      }
+    }
+  }
+}
+
+.post {
+  .entry-content {
+    color: $blue;
+  }
+}

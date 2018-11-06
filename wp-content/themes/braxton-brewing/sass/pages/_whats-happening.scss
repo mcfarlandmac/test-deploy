@@ -1,0 +1,74 @@
+.type-event.teaser {
+  margin-top: 2em;
+  .entry-info {
+    background: $white;
+    color: $blue;
+    height: 280px;
+    padding: 15px;
+    overflow: hidden;
+  }
+  .teaser-image {
+    top: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include background-size(cover);
+    height: 220px;
+    width: 100%;
+  }
+  .entry-title {
+    font-weight: 200;
+    text-align: center;
+    margin: 0px;
+    font-size: 2em;
+    a {
+	    color: $blue;
+    }
+  }
+  .entry-location {
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+  }
+  .entry-content {
+		padding: 1em 0.5em;
+  }
+  footer {
+    background: url(../images/gold-texture.jpg) top left repeat $gold;
+    
+    .row {
+	    margin-left: 0;
+      margin-right: 0;
+    }
+
+    .entry-meta {
+
+      & > span {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 200;
+        font-size: 1.35em;
+        padding: 0.5em inherit;
+        &.entry-time {
+          background: rgba(darken($darkgold, 5), 0.4);
+        }
+      }
+    }
+    a {
+      color: $white;
+      text-transform: uppercase;
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 0.5em inherit;
+      text-align: center;
+      background: $darkgold;
+	    background: rgba($darkgold, 0.6);
+	    @include transition(background, .25s);
+	    &:hover {
+	      background: $blue;
+	      background: rgba(darken($darkgold, 5), 0.6);
+	      text-decoration: none;
+	    }
+    }
+  }
+}

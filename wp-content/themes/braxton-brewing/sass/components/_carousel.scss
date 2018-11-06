@@ -1,0 +1,27 @@
+#braxton-carousel-home {
+/*   height: 400px; */
+/*   margin-top: 100px; */
+	margin-bottom: 0px;
+  .carousel-control.right, .carousel-control.left {
+    background: none;
+    width: 5%;
+  }
+  .carousel-inner {
+/*     @extend .container; */
+  }
+  .carousel-inner, .carousel-inner .item {
+    height: 100%;
+  }
+  img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  p {
+    font-size: 1.25em;
+  }
+  .carousel-indicators {
+	  bottom: -50px;
+	  display: none;
+  }
+}

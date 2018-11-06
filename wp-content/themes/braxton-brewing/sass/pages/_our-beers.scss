@@ -1,0 +1,19 @@
+.beer-meta {
+  background: url(../images/gold-texture.jpg) top left repeat $gold;
+  .beer-stat {
+    font-size: 3.5em;
+    font-weight: 200;
+  }
+  .beer-ibu {
+    background: rgba(darken($darkgold, 5), 0.4);
+  }
+  & > div > div {
+    display: inline;
+    height: 80px;
+    line-height: 80px;
+    span {
+      vertical-align: middle;
+      display: inline;
+    }
+  }
+}

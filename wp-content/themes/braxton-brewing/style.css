@@ -1,0 +1,657 @@
+
+/*
+Theme Name: Braxton Brewing
+Theme URI: http://www.braxtonbrewing.com
+Author: Daniel Cervantes & Zach McNulty
+Template: bootstrap-basic
+Version: 1.0
+*/
+
+/*
+Required WordPress CSS
+*/
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em;
+}
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em;
+}
+.bypostauthor {}
+.gallery-caption {}
+.sticky {}
+.wp-caption {
+  border: 1px solid #ccc;
+  margin-bottom: 1.5em;
+  max-width: 100%;
+}
+.wp-caption img[class*="wp-image-"] {
+  display: block;
+  margin: 1.2% auto 0;
+  max-width: 98%;
+}
+.wp-caption-text {
+  text-align: center;
+}
+.wp-caption .wp-caption-text {
+  margin: 0.8075em 0;
+}
+
+.on-tap {
+  position:absolute;
+  top:0px;
+  right:0px;
+  background-image: url('http://www.braxtonbrewing.com/wp-content/uploads/2016/03/on_tap.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  height:80px;
+  width:80px;
+}
+
+.beer.teaser .entry-container .entry-info {
+  height: 200px;
+}
+
+.locations-wrapper {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.home-location {
+  flex: 1 0 auto;
+  height: 400px;
+  min-width: 300px;
+  text-align: center;
+  background-image: url(https://media-cdn.tripadvisor.com/media/photo-s/09/af/b6/d1/braxton-brewing-company.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.home-location#labs {
+  background-image: url(https://www.gannett-cdn.com/-mm-/703e9ff1da4a94fe13561fa3f0ebf3ec5599c40a/c=0-748-4028-3024&r=x1683&c=3200x1680/local/-/media/2017/05/24/Cincinnati/Cincinnati/636312271126308179-braxton-overview.JPG);
+  background-position: center center;
+  background-size: cover;
+}
+
+.home-location a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 400px;
+  font-size: 2.5em;
+  font-family: "MicrobrewOne", Helvetica, Arial, sans-serif;
+  color: #FFF;
+  background-color: rgba(203, 154, 46, 0.8);
+}
+
+.home-location#labs a {
+  background-color: rgba(0, 38, 63, 0.8);
+}
+
+.home-location a:hover {
+  text-decoration: none;
+  color: #eaeaea;
+  background-color: rgba(203, 154, 46, 0.7);
+}
+
+.home-location#labs a:hover {
+  background-color: rgba(0, 38, 63, 0.7);
+}
+
+.trophy-header {
+  position: relative;
+}
+
+.trophy-header .screen {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.trophy-header h1 {
+  text-align: center;
+  margin-top: 155px;
+}
+
+.trophy-section {
+  padding-top: 50px;
+}
+
+.trophy-section h1 {
+  color: #00263F;
+  margin-bottom: 20px;
+}
+
+.trophy-section p, .trophy-section h2 {
+  color: #00263F;
+}
+
+#trophy-partners {
+  display: block;
+  max-width: 1140px;
+  margin: 50px auto;
+}
+
+#trophy-partners:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+.trophy-partner {
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 24%;
+  height: 200px;
+  background: #fff;
+  border: 1px solid transparent;
+  border-left-color: #fafafa;
+  border-right-color: #ddd;
+  border-bottom-color: #dadada;
+  border-top-color: #f5f5f5;
+  overflow: hidden;
+  margin-left: 1%;
+  margin-bottom: 10px;
+  background-size: cover;
+  background-position: center center;
+
+  transition: border 0.3s;
+}
+
+.trophy-partner:first-child {
+  border-left-color: #ddd;
+}
+
+.trophy-partner:hover {
+  border: 1px solid #00263F;
+}
+
+.trophy-partner a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.trophy-partner img {
+  width: 70%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.select {
+  width: 50%;
+  display: inline-block;
+}
+
+#city-select select {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em 0em 0em 0em;
+    font: 11px BlinkMacSystemFont;
+}
+
+#city-select select {
+  -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    z-index: 0;
+    display: block;
+    width: 100%;
+    margin: 0;
+    height: 80px;
+    padding: 10px;
+    font-size: 24px;
+    line-height: 30px;
+    font-family: "Square Market",Helvetica,Arial,"Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","メイリオ",Meiryo,"ＭＳ Ｐゴシック",sans-serif;
+    font-weight: 300;
+    background: #fff;
+    color: #5f6a7d;
+    outline: none;
+    border: 1px solid #eaeaea;
+    border-radius: 3px;
+  transition: color .3s, border-color .3s, background-color .3s;
+}
+
+.select-field .select {
+  position: relative;
+}
+
+.select-field i {
+  display: block;
+    position: absolute;
+    z-index: 2;
+    top: 28px;
+    right: 16px;
+    width: 16px;
+    height: 16px;
+    border-right: 1px solid #FFBA00;
+    border-bottom: 1px solid #FFBA00;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    pointer-events: none;
+}
+
+.select-field .select:after {
+  content: " ";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 1px;
+    right: 1px;
+    width: 38px;
+    height: 38px;
+    background: #fff;
+    border-radius: 3px;
+    pointer-events: none;
+}
+
+.drive-partners {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1140px;
+  margin: 50px auto;
+}
+
+.drive-partners:after, .drive-partners:before {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+.drive-partner {
+  flex: 1 0 360px;
+  display: flex;
+  align-items: center;
+  height: 240px;
+  background: #fff;
+  border: 1px solid transparent;
+  border-left-color: #fafafa;
+  border-right-color: #ddd;
+  border-bottom-color: #dadada;
+  border-top-color: #f5f5f5;
+  overflow: hidden;
+  margin-bottom: 10px;
+  background-size: cover;
+  background-position: center center;
+  transition: border 0.3s;
+}
+
+.drive-partner:hover {
+  border: 1px solid #00263F;
+}
+
+.drive-partner a {
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  display: block;
+  flex: 1 0 240px;
+  vertical-align: middle;
+  padding: 20px;
+  height: 100%;
+  text-align: center;
+}
+
+.drive-partner img {
+  width: 70%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.wpcf7 {
+  width: 650px;
+  max-width: 100%;
+  margin: 50px auto 30px auto !important;
+}
+
+.wpcf7 form {
+  margin: auto;
+  text-align: left;
+}
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 input[type="tel"],
+.wpcf7 textarea
+{
+  -webkit-appearance: none;
+  position: relative;
+  z-index: 0;
+  display: block;
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Square Market", Helvetica, Arial, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+  font-weight: 300;
+  color: rgb(95, 106, 125);
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  margin: 5px 0 0 0;
+  padding: 10px;
+  background: rgb(255, 255, 255);
+  outline: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(196, 196, 196);
+  border-radius: 3px;
+  transition: color 0.3s, border-color 0.3s, background-color 0.3s;
+}
+
+.wpcf7 label
+{
+  -webkit-appearance: none;
+  position: relative;
+  z-index: 0;
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Square Market", Helvetica, Arial, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+  font-weight: 300;
+  color: rgb(95, 106, 125);
+  margin: 0px;
+  padding: 10px;
+  outline: none;
+}
+
+.wpcf7 p {
+  margin: 0;
+}
+
+.wpcf7-submit {
+  padding: 10px 15px;
+  background-color: #cb9a2e !important;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.hide-title .page-title {
+  display: none;
+}
+
+.subscribe-front {
+  height: 100%;
+  position: relative;
+}
+
+/* Location Single */
+
+.location-page {
+  color: #111;
+}
+
+.location-logo {
+  text-align: center;
+}
+
+.location-logo img {
+  width: 200px;
+  height: auto;
+  margin: 40px auto;
+}
+
+.location-container {
+  background-color: #fafafa;
+  padding: 15px;
+  margin-bottom: 40px;
+}
+
+.location-hero {
+  height: 400px;
+  background-size: cover;
+  background-position: center center;
+  margin-top: -15px;
+  margin-bottom: 15px;
+}
+
+.location-widget {
+  background-color: #f5f5f5;
+  border: 1px solid #eaeaea;
+  padding: 10px;
+}
+
+.location-widget h3 {
+  border-bottom: 1px solid #c0c0c0;
+}
+
+.hours-row {
+  width: 100%;
+  margin: 5px 10px;
+}
+
+.hours-day {
+  display: inline-block;
+}
+
+.hours-open {
+  float: right;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+@media only screen 
+  and (max-width: 1024px) {
+
+    .trophy-partner {
+      width: 32%;
+      height: 260px;
+    }
+}
+
+@media only screen 
+  and (max-width: 760px) {
+
+    .trophy-partner {
+      width: 48%;
+      height: 300px;
+    }
+}
+
+@media only screen 
+  and (max-width: 480px) {
+
+    .trophy-partner {
+      width: 98%;
+      height: 360px;
+    }
+}
+
+.menu-header, .menu-nav.ut-row, .menu-info {
+  display: none;
+}
+
+.ut-menu-standard .section.item-bg-color {
+  padding-top: 0;
+}
+
+.beer-menu-btn-container {
+  width: 100%;
+  text-align: center;
+}
+
+.beer-menu-btn {
+  font-size: 30px;
+}
+
+.beer-menu {
+  margin-top: 20px;
+}
+
+.location-container .taproom-top-button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.location-container .beer-header-nav-category {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.location-container .taproom-360,
+.location-container .food-options {
+  display: none;
+}
+
+.food-options .food-options-menus img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.beer .item-description,
+.beer .rating-hideable,
+.beer .container-list .with-price,
+.beer .rating-hideable,
+.ut-menu-standard .inner-container .pagination-container,
+.ut-menu-standard .section .section-heading .section-description {
+  display: none !important;
+}
+
+.ut-menu-standard .menu-items-container .menu-item {
+  margin-bottom: 0 !important;
+}
+
+.ut-menu-standard .section.item-bg-color {
+  padding-bottom: 0;
+}
+
+/* Social Media Icons */
+div.social-network {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  width: 200px;
+  margin: 40px auto 0;
+}
+div.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+/* footer social icons */
+
+
+.social-network a.icoTwitter:hover {
+  background-color:#33ccff;
+}
+.social-network a.icoFacebook:hover {
+  background-color:#3b5998;
+}
+
+.social-network a.icoInstagram:hover {
+  background:  
+    linear-gradient( #400080, transparent), 
+    linear-gradient( 200deg, #d047d1, #ff0000, #ffff00);
+}
+
+.social-network a.icoTwitter:hover i,
+.social-network a.icoFacebook:hover i, .social-network a.icoInstagram:hover i {
+  color:#fff;
+}
+
+@media (max-width: 991px) {
+  .social-network a.icoTwitter {
+    background-color:#33ccff;
+  }
+
+  .social-network a.icoFacebook {
+    background-color:#3b5998;
+  }
+
+  .social-network a.icoInstagram {
+    background:  
+      linear-gradient( #400080, transparent), 
+      linear-gradient( 200deg, #d047d1, #ff0000, #ffff00);
+  }
+} 
+
+a.socialIcon:hover, .socialHoverClass {
+  color:#44BCDD;
+}
+
+.social-circle a {
+  display:block;
+  position:relative;
+  margin:0 auto 0 auto;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  border-radius:50%;
+  text-align:center;
+  width: 50px;
+  height: 50px;
+  font-size:30px;
+  background-color: gray;
+}
+
+.social-circle i {
+  margin:0;
+  line-height:50px;
+  text-align: center;
+}
+
+.social-circle a:hover i, .triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.social-circle i {
+  color: #fff;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.type-event.teaser footer .entry-meta > span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+

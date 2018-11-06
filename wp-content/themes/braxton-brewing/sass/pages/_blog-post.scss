@@ -1,0 +1,68 @@
+.single-post {
+  .post-container {
+    background-color: $white;
+  }
+
+  .entry-title {
+    text-align: center;
+    color: $blue;
+    margin: 0.5em 0.5em 0.2em 0.5em !important;
+    font-weight: 200;
+  }
+
+  .entry-meta {
+    text-align: center;
+    color: $blue !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    .date {
+      margin: 0 1em;
+    }
+    .icon {
+      color: $darkgold;
+    }
+  }
+
+  .entry-content {
+    img {
+      margin: 1.5em 0;
+    }
+    p {
+      margin-bottom: 1.5em;
+    }
+  }
+
+  .floral-border {
+    margin: 2em 0;
+
+    &:before {
+      left: 3%;
+      width: 45%;
+    }
+    &:after {
+      right: 3%;
+      width: 45%;
+    }
+    .icon-floral {
+      font-size: 1.3em;
+    }
+  }
+
+  .comment-container {
+    h3 {
+      text-align: center;
+      background: url(../images/gold-texture.jpg) top left repeat $gold;
+      padding: 1em 0;
+      margin: 1em 0;
+      text-transform: uppercase;
+    }
+  }
+  #disqus_thread {
+    margin: 1em 2em;
+  }
+  .featured-image {
+    background-position: center center;
+    @include background-size(cover);
+    height: 350px;
+  }
+}

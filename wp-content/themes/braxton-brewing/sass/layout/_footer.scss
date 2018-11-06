@@ -1,0 +1,108 @@
+#site-footer {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+/*   margin-bottom: 0.5em; */
+  background: -moz-linear-gradient(top,  rgba(6,50,81,0) 0%, rgba(2,23,40,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(6,50,81,0)), color-stop(100%,rgba(2,23,40,1)));
+	background: -webkit-linear-gradient(top,  rgba(6,50,81,0) 0%,rgba(2,23,40,1) 100%);
+	background: -o-linear-gradient(top,  rgba(6,50,81,0) 0%,rgba(2,23,40,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(6,50,81,0) 0%,rgba(2,23,40,1) 100%);
+	background: linear-gradient(to bottom,  rgba(6,50,81,0) 0%,rgba(2,23,40,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00063251', endColorstr='#021728',GradientType=0 );
+
+  @media (min-width: $screen-sm-min) {
+    margin: 2em auto 0 auto;
+  }
+  
+  .motto {
+	  @include font-microbrew;
+	  color: $gold;
+	  font-size: 1.4em;
+	  padding: 20px 0;
+  }
+}
+
+.footer-left {
+  ul {
+    list-style: none;
+    padding-left: 0;
+    li {
+			display: inline-block;
+      margin-right: 5px;
+      &:after {
+        content: "|";
+      }
+      &:last-child:after {
+        content: "";
+      }
+      a {
+        color: $white;
+        font-size: 1em;
+        font-weight: 200;
+        text-transform: uppercase;
+        @include transition(color 0.2s);
+        margin-right: 10px;
+        &:hover {
+	        text-decoration: none;
+	        color: $gold;
+        }
+      }
+    }
+    &.social {
+      padding: 1.5em;
+      li:after {
+	      content: "";
+      }
+      a {
+        color: $blue;
+        font-size: 1.4em;
+        &:hover {
+          color: $white;
+          @include transition(color 0.2s);
+          text-decoration: none;
+        }
+        .icon {
+	        background: $gold;
+	        padding: 5px;
+        }
+      }
+      /*
+@media (max-width: $screen-xs-max) {
+        display: table;
+        width: 100%;
+        text-align: center;
+        padding-top: 0;
+        li {
+          float: none;
+          display: table-cell;
+          a {
+            font-size: 1.75em;
+            color: $white;
+          }
+        }
+      }
+*/
+    }
+  }
+  @media (max-width: $screen-xs-max) {
+    #nav_menu-2 {
+      display: none;
+    }
+  }
+}
+.footer-right {
+  .slogan {
+    display: inline-block;
+    background: url(../images/LiftOneToLife.png) no-repeat transparent;
+    width: 300px;
+    height: 68px;
+  }
+  font-size: 3em;
+  color: $gold;
+  @media (max-width: $screen-xs-max) {
+    text-align: center !important;
+    width: 100%;
+    margin-top: 0.5em;
+  }
+}

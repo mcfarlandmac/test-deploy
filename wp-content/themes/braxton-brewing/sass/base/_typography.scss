@@ -1,0 +1,255 @@
+@font-face {
+	font-family: 'braxton';
+	src:url('../fonts/braxton.eot?-cnaaf9');
+	src:url('../fonts/braxton.eot?#iefix-cnaaf9') format('embedded-opentype'),
+		url('../fonts/braxton.woff?-cnaaf9') format('woff'),
+		url('../fonts/braxton.ttf?-cnaaf9') format('truetype'),
+		url('../fonts/braxton.svg?-cnaaf9#braxton') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.icon {
+	font-family: 'braxton';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-vimeo:before {
+	content: "\e60d";
+}
+.icon-right-arrow:before {
+	content: "\f078";
+}
+.icon-phone:before {
+	content: "\e602";
+}
+.icon-clock:before {
+	content: "\e603";
+}
+.icon-facebook:before {
+	content: "\e604";
+}
+.icon-instagram:before {
+	content: "\e605";
+}
+.icon-mobile:before {
+	content: "\e606";
+}
+.icon-twitter:before {
+	content: "\e607";
+}
+.icon-email:before {
+	content: "\e608";
+}
+.icon-calendar:before {
+	content: "\e609";
+}
+.icon-user:before {
+	content: "\e60a";
+}
+.icon-pin:before {
+	content: "\e60b";
+}
+.icon-liftonetolife:before {
+	content: "\e600";
+}
+.icon-floral:before {
+	content: "\e601";
+}
+.icon-clock:before {
+	content: "\e603";
+}
+.icon-facebook:before {
+	content: "\e604";
+}
+.icon-instagram:before {
+	content: "\e605";
+}
+.icon-mobile:before {
+	content: "\e606";
+}
+.icon-twitter:before {
+	content: "\e607";
+}
+.icon-email:before {
+	content: "\e608";
+}
+.icon-calendar:before {
+	content: "\e609";
+}
+.icon-user:before {
+	content: "\e60a";
+}
+.icon-pin:before {
+	content: "\e60b";
+}
+.icon-menu:before {
+	content: "\e60c";
+}
+
+
+/* Liberator Font */
+@font-face {
+	font-family: 'liberatorheavy';
+	src: url('../fonts/liberator-heavy-webfont.eot');
+	src: url('../fonts/liberator-heavy-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/liberator-heavy-webfont.woff2') format('woff2'),
+	     url('../fonts/liberator-heavy-webfont.woff') format('woff'),
+	     url('../fonts/liberator-heavy-webfont.svg#liberatorheavy') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+/* MicroBrew One Font */
+/**
+ * @license
+ * MyFonts Webfont Build ID 2928387, 2014-11-24T22:14:22-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: MicrobrewOne by Albatross
+ * URL: http://www.myfonts.com/fonts/albatross/microbrew/one/
+ * Copyright: Copyright (c) 2014 by Jay Hilgert. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2928387
+ * 
+ * Copyright 2014 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/2caf03");
+
+  
+@font-face {
+	font-family: 'MicrobrewOne';
+	src: url('../fonts/2CAF03_0_0.eot');
+	src: url('../fonts/2CAF03_0_0.eot?#iefix') format('embedded-opentype'),
+			 url('../fonts/2CAF03_0_0.woff2') format('woff2'),
+			 url('../fonts/2CAF03_0_0.woff') format('woff'),
+			 url('../fonts/2CAF03_0_0.ttf') format('truetype');
+}
+ 
+
+
+// fonts
+$font-normal: 								'DIN Next W01 Light', Helvetica, Arial, sans-serif;
+$font-italic: 								'DINNextW01-LightItalic', Helvetica, Arial, sans-serif;
+$font-bold: 									'DIN Next W01 Bold', Helvetica, Arial, sans-serif;
+$font-bolditalic:			 				'DINNextW01-BoldItalic', Helvetica, Arial, sans-serif;
+$font-light: 									'DINNextLTW01-UltraLight 706122';
+$font-lightitalic: 						'DINNextW01-LightItalic';
+$font-condensedlight: 				'DINNextW01-CondensedLig';
+$font-condensedultralight: 		'DINNextW01-CondensedUlt';
+$font-serif:									'P22 Morris W00', "Times New Roman", serif;
+$font-liberator:							'liberatorheavy', Helvetica, Arial, sans-serif;
+$font-microbrew:							'MicrobrewOne', Helvetica, Arial, sans-serif;
+
+@mixin font-normal {
+  font-family: $font-normal;
+  font-weight: normal;
+}
+@mixin font-italic {
+  font-family: $font-italic;
+  font-style: normal;
+}
+@mixin font-bold {
+  font-family: $font-bold;
+  font-weight: normal;
+}
+@mixin font-bold-italic {
+  font-family: $font-bolditalic;
+  font-weight: normal;
+  font-style: normal;
+}
+@mixin font-light {
+  font-family: $font-light;
+  font-weight: normal;
+}
+@mixin font-lightitalic {
+  font-family: $font-lightitalic;
+  font-style: normal;
+}
+@mixin font-condensed {
+	font-family: $font-condensedultralight;
+	font-style: normal;
+}
+@mixin font-serif {
+	font-family: $font-serif;
+	font-weight: normal;
+}
+@mixin font-liberator {
+	font-family: $font-liberator;
+	font-weight: normal;
+}
+@mixin font-microbrew {
+	font-family: $font-microbrew;
+	font-weight: normal;
+}
+
+
+html, body {
+  font-family: $sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-weight: 200;
+  font-size: 4em;
+/*   @include font-microbrew; */
+  @media (max-width: $screen-xs-max) {
+    font-size: 2.75em;
+  }
+}
+
+h4, .h4 {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+.blue-text {
+  color: $blue;
+}
+
+.gold-text {
+  color: $gold;
+}
+
+a.gold-text {
+  color: $gold;
+  &:hover {
+    color: $darkgold;
+  }
+}
+
+a {
+}
+
+
+blockquote {	
+	padding: 0;
+	margin: 0;
+	font-size: 1.25em;
+	line-height: 1.75;
+	border-left: none;
+	@include font-serif;
+	text-align: center;
+}
